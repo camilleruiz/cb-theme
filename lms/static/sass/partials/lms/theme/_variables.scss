@@ -1,0 +1,19 @@
+// Sample red theme to demonstrate SASS overrides
+
+// Theme colors
+//
+// Note: define colors needed by your theme first
+
+$cp_darkblue: #06397d;
+$cp_lightblue: #82add6;
+$cp_offwhite: #e4e9f4;
+$cp_yellow: #facb66;
+
+$cp_red: #911f1e;
+
+
+// Make red the primary color
+$primary: $cp_darkblue;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
