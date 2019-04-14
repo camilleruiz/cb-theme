@@ -18,9 +18,10 @@
             <ul class="navbar-nav">
               % for item_num, link in enumerate(footer['navigation_links'], start=1):
                 <li class="nav-item">
+                  % if item_num%2==1:
                   <% item_num %>
-                  HEY
                   <a class="nav-link" href="${link['url']}">${link['title']}</a>
+                  % endif
                 </li>
               % endfor
             </ul>
